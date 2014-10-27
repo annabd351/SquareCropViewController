@@ -13,7 +13,9 @@ Autolayout "calculates" the size of the square crop area and positions the block
 
 There are five views involved: a hidden "Crop Opening" view; and four blockers (left, right, top, bottom).  The Crop Opening is positioned over the target crop area, and is constrained to be square (via an aspect constraint).  The blockers sit between the boundary of the superview and the Crop Opening, one on each side.  Each of the blockers is constrained to a boundary on one side, and the Crop Opening on the other -- the Crop Opening is sandwiched between the blockers and centered on the screen.
 
-This set of constraints causes autolayout to size the Crop Opening to fit the smallest dimension of the superview, and center it within the largest dimension of the superview.  Along the large superview axis, the blockers expand to fill the space between the view boundaries and the Crop Opening;  in the small axis, they shrink to nothing and are not visible.
+![](Docs/doc_image_3.png)
+
+This set of constraints causes autolayout to size the Crop Opening to fit the smallest dimension of the superview, and center it within the largest dimension of the superview.  Along the large superview axis, the blockers expand to fill the space between the view boundaries and the Crop Opening;  along the small axis, they shrink to nothing and are not visible.
 
 Panning the Image
 -----------------
@@ -25,7 +27,7 @@ Programmatic Actions
 --------------------
 Though autolayout does most of the work, there are a few things which can only be configured once the dimensions of the image are known.  The view controller handles these things by modifying constraints at runtime.  (Note that it *never* modifies the bounds/frame of views explicitly -- changing view dimensions manually conflicts with autolayout).
 
-When the image is oriented orthogonally to the screen (i.e. the image is in portrait, screen in landscape or vice-versa), the view controller moves the scroll view so the it sits between the blockers in along the large screen axis.  This creates a channel in which the image can slide back and forth.  The Crop Opening is the area visible on the screen.
+When the image is oriented orthogonally to the screen (i.e. the image is in portrait, screen in landscape or vice-versa), the view controller moves the scroll view so it sits between the blockers along the large screen axis.  This creates a channel in which the image can slide back and forth.  The Crop Opening is the area visible on the screen.
 
 ![](Docs/doc_image_2.png/)
 
@@ -35,5 +37,6 @@ The second group of things which need to be configured programmatically are the 
 
 Comments/questions/improvements?
 --------------------------------
-Feel free to contact me @annabd351 with any feedback or questions!
+Feel free to [contact me](annabd@wackybananasoftware.com) with any feedback or questions!
 
+***Anna Dickinson***
