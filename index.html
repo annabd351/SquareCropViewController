@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Autolayout Cropper : A simple view controller for cropping a UIImage to a square by panning it under shaded cutoff areas.  Shows how to use autolayout to implement a complex function with very little code.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Autolayout Cropper</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/annabd351/SquareCropViewController">View on GitHub</a>
+
+          <h1 id="project_title">Autolayout Cropper</h1>
+          <h2 id="project_tagline">A simple view controller for cropping a UIImage to a square by panning it under shaded cutoff areas.  Shows how to use autolayout to implement a complex function with very little code.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/annabd351/SquareCropViewController/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/annabd351/SquareCropViewController/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="squarecropviewcontroller" class="anchor" href="#squarecropviewcontroller"><span class="octicon octicon-link"></span></a>SquareCropViewController</h1>
+
+<p><img src="https://github.com/annabd351/SquareCropViewController/raw/master/Docs/doc_image_1.png" alt=""></p>
+
+<h2>
+<a name="positioning-the-crop-opening" class="anchor" href="#positioning-the-crop-opening"><span class="octicon octicon-link"></span></a>Positioning the Crop Opening</h2>
+
+<p>The goal is to crop the image to the largest square which fits the aspect ratio of the device.  Shaded views ("blockers") appear over the areas to be cropped.  The image slides back and forth underneath the shaded views.  The user taps the "Crop" button to crop the image to the square area.</p>
+
+<p>Autolayout "calculates" the size of the square crop area and positions the blockers automatically.  </p>
+
+<p>There are five views involved: a hidden "Crop Opening" view; and four blockers (left, right, top, bottom).  The Crop Opening is positioned over the target crop area, and is constrained to be square (via an aspect constraint).  The blockers sit between the boundary of the superview and the Crop Opening, one on each side.  Each of the blockers is constrained to a boundary on one side, and the Crop Opening on the other -- the Crop Opening is sandwiched between the blockers and centered on the screen.</p>
+
+<p><img src="https://github.com/annabd351/SquareCropViewController/raw/master/Docs/doc_image_3.png" alt=""></p>
+
+<p>This set of constraints causes autolayout to size the Crop Opening to fit the smallest dimension of the superview, and center it within the largest dimension of the superview.  Along the large superview axis, the blockers expand to fill the space between the view boundaries and the Crop Opening;  along the small axis, they shrink to nothing and are not visible.</p>
+
+<h2>
+<a name="panning-the-image" class="anchor" href="#panning-the-image"><span class="octicon octicon-link"></span></a>Panning the Image</h2>
+
+<p>Underneath the Crop Opening and blockers, there is a UIScrollView.  The source image sits inside the scroll view, allowing the user to pan to select the area to crop.  </p>
+
+<p>To perform the crop, all the view controller needs to do is calculate the position of the Crop Opening with respect to the image position within the scroll view -- all the tricky positioning and scaling is done automagically by autolayout!</p>
+
+<h2>
+<a name="programmatic-actions" class="anchor" href="#programmatic-actions"><span class="octicon octicon-link"></span></a>Programmatic Actions</h2>
+
+<p>Though autolayout does most of the work, there are a few things which can only be configured once the dimensions of the image are known.  The view controller handles these things by modifying constraints at runtime.  (Note that it <em>never</em> modifies the bounds/frame of views explicitly -- changing view dimensions manually conflicts with autolayout).</p>
+
+<p>When the image is oriented orthogonally to the screen (i.e. the image is in portrait, screen in landscape or vice-versa), the view controller moves the scroll view so it sits between the blockers along the large screen axis.  This creates a channel in which the image can slide back and forth.  The Crop Opening is the area visible on the screen.</p>
+
+<p><img src="https://github.com/annabd351/SquareCropViewController/raw/master/Docs/doc_image_2.png" alt=""></p>
+
+<p>To enable autolayout to handle this function, the scroll view contains two sets of constraints:  one set on each side to the blockers, and another set to the boundaries of the superview.  The view controller positions the scroll view by enabling/disabling pairs of these constraints:  for example, to position the scroll view below the top blocker, it enables the blocker-to-scroll view constraint, and disables the scroll view-to-superview constraint.  To position the scroll view along the top edge of the superview, it would do the opposite.</p>
+
+<p>The second group of things which need to be configured programmatically are the properties of the scroll view itself.  These also depend on the image dimensions.  The view controller configures the scroll view to display the image at the size which fits into the small dimension of the Crop Opening.  Then, it sets the scroll view's content insets to allow it to pan underneath the blockers.</p>
+
+<h2>
+<a name="commentsquestionsimprovements" class="anchor" href="#commentsquestionsimprovements"><span class="octicon octicon-link"></span></a>Comments/questions/improvements?</h2>
+
+<p>Feel free to <a href="annabd@wackybananasoftware.com">contact me</a> with any feedback or questions!</p>
+
+<p><strong><em>Anna Dickinson</em></strong></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Autolayout Cropper maintained by <a href="https://github.com/annabd351">annabd351</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
