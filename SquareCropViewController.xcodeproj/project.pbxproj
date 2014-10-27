@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		83CBD90719FEA18E008ABA78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD90619FEA18E008ABA78 /* AppDelegate.swift */; };
-		83CBD90919FEA18E008ABA78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD90819FEA18E008ABA78 /* ViewController.swift */; };
-		83CBD90C19FEA18E008ABA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD90A19FEA18E008ABA78 /* Main.storyboard */; };
 		83CBD90E19FEA18E008ABA78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD90D19FEA18E008ABA78 /* Images.xcassets */; };
-		83CBD91119FEA18E008ABA78 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD90F19FEA18E008ABA78 /* LaunchScreen.xib */; };
 		83CBD91D19FEA18E008ABA78 /* SquareCropViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD91C19FEA18E008ABA78 /* SquareCropViewControllerTests.swift */; };
+		83CBD92D19FEA1D4008ABA78 /* ADSquareCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */; };
+		83CBD92E19FEA1D4008ABA78 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92719FEA1D4008ABA78 /* DemoViewController.swift */; };
+		83CBD93019FEA1D4008ABA78 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92919FEA1D4008ABA78 /* CGRect+Extensions.swift */; };
+		83CBD93119FEA1D4008ABA78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92A19FEA1D4008ABA78 /* UIImage+Extensions.swift */; };
+		83CBD93219FEA1D4008ABA78 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92B19FEA1D4008ABA78 /* CGSize+Extensions.swift */; };
+		83CBD93319FEA1D4008ABA78 /* Demo Image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */; };
+		83CBD93519FEA29F008ABA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD93419FEA29E008ABA78 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		83CBD90119FEA18E008ABA78 /* SquareCropViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareCropViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CBD90519FEA18E008ABA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CBD90619FEA18E008ABA78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83CBD90819FEA18E008ABA78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83CBD90B19FEA18E008ABA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83CBD90D19FEA18E008ABA78 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		83CBD91019FEA18E008ABA78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		83CBD91619FEA18E008ABA78 /* SquareCropViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareCropViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CBD91B19FEA18E008ABA78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CBD91C19FEA18E008ABA78 /* SquareCropViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareCropViewControllerTests.swift; sourceTree = "<group>"; };
+		83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADSquareCropViewController.swift; sourceTree = "<group>"; };
+		83CBD92719FEA1D4008ABA78 /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		83CBD92919FEA1D4008ABA78 /* CGRect+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Extensions.swift"; sourceTree = "<group>"; };
+		83CBD92A19FEA1D4008ABA78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		83CBD92B19FEA1D4008ABA78 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
+		83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Demo Image.jpeg"; sourceTree = "<group>"; };
+		83CBD93419FEA29E008ABA78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,15 @@
 		83CBD90319FEA18E008ABA78 /* SquareCropViewController */ = {
 			isa = PBXGroup;
 			children = (
+				83CBD93419FEA29E008ABA78 /* Main.storyboard */,
+				83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */,
+				83CBD92719FEA1D4008ABA78 /* DemoViewController.swift */,
+				83CBD92919FEA1D4008ABA78 /* CGRect+Extensions.swift */,
+				83CBD92A19FEA1D4008ABA78 /* UIImage+Extensions.swift */,
+				83CBD92B19FEA1D4008ABA78 /* CGSize+Extensions.swift */,
+				83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */,
 				83CBD90619FEA18E008ABA78 /* AppDelegate.swift */,
-				83CBD90819FEA18E008ABA78 /* ViewController.swift */,
-				83CBD90A19FEA18E008ABA78 /* Main.storyboard */,
 				83CBD90D19FEA18E008ABA78 /* Images.xcassets */,
-				83CBD90F19FEA18E008ABA78 /* LaunchScreen.xib */,
 				83CBD90419FEA18E008ABA78 /* Supporting Files */,
 			);
 			path = SquareCropViewController;
@@ -192,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CBD90C19FEA18E008ABA78 /* Main.storyboard in Resources */,
-				83CBD91119FEA18E008ABA78 /* LaunchScreen.xib in Resources */,
+				83CBD93519FEA29F008ABA78 /* Main.storyboard in Resources */,
 				83CBD90E19FEA18E008ABA78 /* Images.xcassets in Resources */,
+				83CBD93319FEA1D4008ABA78 /* Demo Image.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CBD90919FEA18E008ABA78 /* ViewController.swift in Sources */,
+				83CBD92D19FEA1D4008ABA78 /* ADSquareCropViewController.swift in Sources */,
+				83CBD93219FEA1D4008ABA78 /* CGSize+Extensions.swift in Sources */,
 				83CBD90719FEA18E008ABA78 /* AppDelegate.swift in Sources */,
+				83CBD93119FEA1D4008ABA78 /* UIImage+Extensions.swift in Sources */,
+				83CBD92E19FEA1D4008ABA78 /* DemoViewController.swift in Sources */,
+				83CBD93019FEA1D4008ABA78 /* CGRect+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +250,6 @@
 			targetProxy = 83CBD91719FEA18E008ABA78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		83CBD90A19FEA18E008ABA78 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83CBD90B19FEA18E008ABA78 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		83CBD90F19FEA18E008ABA78 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83CBD91019FEA18E008ABA78 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		83CBD91E19FEA18E008ABA78 /* Debug */ = {
@@ -289,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SquareCropViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = SquareCropViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
