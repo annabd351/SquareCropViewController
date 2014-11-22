@@ -49,10 +49,17 @@ class ADSquareCropViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var cropOpeningView: UIView!
     
-    private let NibName = "ADSquareCropViewController"
     
+    // This is called if we're loading ADSquareCropViewController.xib via a storyboard.
+    private let NibName = "ADSquareCropViewController"
+
     required init(coder aDecoder: NSCoder) {
         super.init(nibName: NibName, bundle: nil);
+    }
+    
+    // Instantiate programmatically using a nib
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
     }
     
     override func viewDidLoad() {

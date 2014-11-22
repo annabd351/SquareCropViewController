@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProgrammaticViewController" customModule="ProgrammaticExample" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="UKp-y0-wsN" id="RXB-Xs-DNa"/>
+                <outlet property="view" destination="4sp-H4-GMI" id="cUG-Qa-y2d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4sp-H4-GMI">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="494" image="Demo Image.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="UKp-y0-wsN">
+                    <rect key="frame" x="20" y="86" width="560" height="494"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvC-7D-nSb">
+                    <rect key="frame" x="321" y="30" width="104" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Crop Image">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cropImagePressed:" destination="-1" eventType="touchUpInside" id="lPM-CB-SdB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgw-OR-dLr">
+                    <rect key="frame" x="179" y="30" width="98" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="Pick Image">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pickImagePresed:" destination="-1" eventType="touchUpInside" id="rur-wa-2Ji"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MvC-7D-nSb" firstAttribute="baseline" secondItem="zgw-OR-dLr" secondAttribute="baseline" id="1U5-0K-BPV"/>
+                <constraint firstAttribute="bottom" secondItem="UKp-y0-wsN" secondAttribute="bottom" constant="20" id="21G-kZ-7Iw"/>
+                <constraint firstAttribute="centerX" secondItem="MvC-7D-nSb" secondAttribute="centerX" constant="-73" id="5w7-6q-6RB"/>
+                <constraint firstAttribute="centerX" secondItem="zgw-OR-dLr" secondAttribute="centerX" constant="72.5" id="CIM-sT-rfH"/>
+                <constraint firstItem="zgw-OR-dLr" firstAttribute="top" secondItem="4sp-H4-GMI" secondAttribute="top" constant="30" id="GHO-l1-E6l"/>
+                <constraint firstItem="UKp-y0-wsN" firstAttribute="top" secondItem="zgw-OR-dLr" secondAttribute="bottom" constant="20" id="Uao-iy-bS4"/>
+                <constraint firstAttribute="trailing" secondItem="UKp-y0-wsN" secondAttribute="trailing" constant="20" id="cxV-eG-PGd"/>
+                <constraint firstItem="UKp-y0-wsN" firstAttribute="leading" secondItem="4sp-H4-GMI" secondAttribute="leading" constant="20" id="lBY-oQ-NLO"/>
+            </constraints>
+            <point key="canvasLocation" x="437" y="379"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Demo Image.jpeg" width="3072" height="2304"/>
+    </resources>
+</document>
