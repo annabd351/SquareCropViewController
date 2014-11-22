@@ -37,6 +37,6 @@ The second group of things which need to be configured programmatically are the 
 
 Comments/questions/improvements?
 --------------------------------
-Feel free to [contact me](annabd@wackybananasoftware.com) with any feedback or questions!
+Feel free to [contact me](mailto:anna@wackybananasoftware.com) with any feedback or questions!
 
 ***Anna Dickinson***
