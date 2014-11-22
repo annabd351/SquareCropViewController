@@ -5,6 +5,14 @@ Simple view controller for cropping a UIImage to a square by panning the image u
 
 ![](Docs/doc_image_1.png/)
 
+Sample use cases
+----------------
+There are two different examples in this project:  A completely storyboard-based approach;  and a programmatic approach.
+
+In the storyboard approach, the SquareCropViewController is created directly in the main storyboard.  In the programmatic example, the SquareCropViewController is loaded from an .xib.
+
+There are separate targets and groups for each.
+
 Positioning the Crop Opening
 ----------------------------
 The goal is to crop the image to the largest square which fits the aspect ratio of the device.  Shaded views ("blockers") appear over the areas to be cropped.  The image slides back and forth underneath the shaded views.  The user taps the "Crop" button to crop the image to the square area.
