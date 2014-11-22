@@ -32,8 +32,6 @@
 		838B77841A21401000F7BE5A /* ProgrammaticExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838B77871A21401000F7BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838B77881A21401000F7BE5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		838B779D1A21401000F7BE5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		838B779E1A21401000F7BE5A /* ProgrammaticExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammaticExampleTests.swift; sourceTree = "<group>"; };
 		838B77A61A21410000F7BE5A /* ProgrammaticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgrammaticViewController.swift; sourceTree = "<group>"; };
 		838B77A71A21410000F7BE5A /* ProgrammaticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProgrammaticViewController.xib; sourceTree = "<group>"; };
 		83CBD90119FEA18E008ABA78 /* SquareCropViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareCropViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +66,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		838B77851A21401000F7BE5A /* ProgrammaticExample */ = {
+		838B77851A21401000F7BE5A /* Programmatic Example */ = {
 			isa = PBXGroup;
 			children = (
 				83DE9EF21A211EC300285BA9 /* ADSquareCropViewController.xib */,
@@ -77,6 +75,7 @@
 				838B77A61A21410000F7BE5A /* ProgrammaticViewController.swift */,
 				838B77A71A21410000F7BE5A /* ProgrammaticViewController.xib */,
 			);
+			name = "Programmatic Example";
 			path = ProgrammaticExample;
 			sourceTree = "<group>";
 		};
@@ -88,30 +87,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		838B779B1A21401000F7BE5A /* ProgrammaticExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				838B779E1A21401000F7BE5A /* ProgrammaticExampleTests.swift */,
-				838B779C1A21401000F7BE5A /* Supporting Files */,
-			);
-			path = ProgrammaticExampleTests;
-			sourceTree = "<group>";
-		};
-		838B779C1A21401000F7BE5A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				838B779D1A21401000F7BE5A /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		83CBD8F819FEA18E008ABA78 = {
 			isa = PBXGroup;
 			children = (
-				83CBD90319FEA18E008ABA78 /* Storyboard */,
-				83DE9EED1A211B2F00285BA9 /* Programmatic */,
-				838B77851A21401000F7BE5A /* ProgrammaticExample */,
-				838B779B1A21401000F7BE5A /* ProgrammaticExampleTests */,
+				83CBD90319FEA18E008ABA78 /* Storyboard Example */,
+				838B77851A21401000F7BE5A /* Programmatic Example */,
 				83CBD90219FEA18E008ABA78 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +105,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83CBD90319FEA18E008ABA78 /* Storyboard */ = {
+		83CBD90319FEA18E008ABA78 /* Storyboard Example */ = {
 			isa = PBXGroup;
 			children = (
 				83DE9EF41A2127A100285BA9 /* Main.storyboard */,
@@ -139,7 +119,7 @@
 				83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */,
 				83CBD90419FEA18E008ABA78 /* Supporting Files */,
 			);
-			name = Storyboard;
+			name = "Storyboard Example";
 			path = SquareCropViewController;
 			sourceTree = "<group>";
 		};
@@ -151,19 +131,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		83DE9EED1A211B2F00285BA9 /* Programmatic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Programmatic;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		838B77831A21401000F7BE5A /* ProgrammaticExample */ = {
+		838B77831A21401000F7BE5A /* Programmatic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 838B77A01A21401000F7BE5A /* Build configuration list for PBXNativeTarget "ProgrammaticExample" */;
+			buildConfigurationList = 838B77A01A21401000F7BE5A /* Build configuration list for PBXNativeTarget "Programmatic" */;
 			buildPhases = (
 				838B77801A21401000F7BE5A /* Sources */,
 				838B77811A21401000F7BE5A /* Frameworks */,
@@ -173,14 +146,14 @@
 			);
 			dependencies = (
 			);
-			name = ProgrammaticExample;
+			name = Programmatic;
 			productName = ProgrammaticExample;
 			productReference = 838B77841A21401000F7BE5A /* ProgrammaticExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83CBD90019FEA18E008ABA78 /* SquareCropViewController */ = {
+		83CBD90019FEA18E008ABA78 /* Storyboard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83CBD92019FEA18E008ABA78 /* Build configuration list for PBXNativeTarget "SquareCropViewController" */;
+			buildConfigurationList = 83CBD92019FEA18E008ABA78 /* Build configuration list for PBXNativeTarget "Storyboard" */;
 			buildPhases = (
 				83CBD8FD19FEA18E008ABA78 /* Sources */,
 				83CBD8FE19FEA18E008ABA78 /* Frameworks */,
@@ -190,7 +163,7 @@
 			);
 			dependencies = (
 			);
-			name = SquareCropViewController;
+			name = Storyboard;
 			productName = SquareCropViewController;
 			productReference = 83CBD90119FEA18E008ABA78 /* SquareCropViewController.app */;
 			productType = "com.apple.product-type.application";
@@ -225,8 +198,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83CBD90019FEA18E008ABA78 /* SquareCropViewController */,
-				838B77831A21401000F7BE5A /* ProgrammaticExample */,
+				83CBD90019FEA18E008ABA78 /* Storyboard */,
+				838B77831A21401000F7BE5A /* Programmatic */,
 			);
 		};
 /* End PBXProject section */
@@ -424,7 +397,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		838B77A01A21401000F7BE5A /* Build configuration list for PBXNativeTarget "ProgrammaticExample" */ = {
+		838B77A01A21401000F7BE5A /* Build configuration list for PBXNativeTarget "Programmatic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				838B77A11A21401000F7BE5A /* Debug */,
@@ -441,7 +414,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBD92019FEA18E008ABA78 /* Build configuration list for PBXNativeTarget "SquareCropViewController" */ = {
+		83CBD92019FEA18E008ABA78 /* Build configuration list for PBXNativeTarget "Storyboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBD92119FEA18E008ABA78 /* Debug */,
