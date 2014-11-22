@@ -45,9 +45,11 @@ class DemoViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             }
             destination.cropCompletionHandler = {
                 self.imageView.image = $0
+                self.dismissViewControllerAnimated(true, completion: nil);
             }
             destination.cancelCompletionHandler = {
                 UIAlertView(title: "Crop cancelled", message: nil, delegate: nil, cancelButtonTitle: "Ok").show()
+                self.dismissViewControllerAnimated(true, completion: nil);
             }
         }
     }

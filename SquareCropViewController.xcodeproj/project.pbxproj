@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		83CBD90719FEA18E008ABA78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD90619FEA18E008ABA78 /* AppDelegate.swift */; };
 		83CBD90E19FEA18E008ABA78 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD90D19FEA18E008ABA78 /* Images.xcassets */; };
-		83CBD92D19FEA1D4008ABA78 /* ADSquareCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */; };
 		83CBD92E19FEA1D4008ABA78 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92719FEA1D4008ABA78 /* DemoViewController.swift */; };
 		83CBD93019FEA1D4008ABA78 /* CGRect+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92919FEA1D4008ABA78 /* CGRect+Extensions.swift */; };
 		83CBD93119FEA1D4008ABA78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92A19FEA1D4008ABA78 /* UIImage+Extensions.swift */; };
 		83CBD93219FEA1D4008ABA78 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92B19FEA1D4008ABA78 /* CGSize+Extensions.swift */; };
 		83CBD93319FEA1D4008ABA78 /* Demo Image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */; };
-		83CBD93519FEA29F008ABA78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD93419FEA29E008ABA78 /* Main.storyboard */; };
+		83CBD93519FEA29F008ABA78 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CBD93419FEA29E008ABA78 /* Demo.storyboard */; };
+		83DE9EF31A211EC300285BA9 /* ADSquareCropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83DE9EF21A211EC300285BA9 /* ADSquareCropViewController.xib */; };
+		83DE9EF51A2127A100285BA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83DE9EF41A2127A100285BA9 /* Main.storyboard */; };
+		83DE9EFA1A21337C00285BA9 /* ADSquareCropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,15 @@
 		83CBD92A19FEA1D4008ABA78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		83CBD92B19FEA1D4008ABA78 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
 		83CBD92C19FEA1D4008ABA78 /* Demo Image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Demo Image.jpeg"; sourceTree = "<group>"; };
-		83CBD93419FEA29E008ABA78 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		83CBD93419FEA29E008ABA78 /* Demo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
+		83DE9EEB1A21198C00285BA9 /* SquareCropViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SquareCropViewController.storyboard; path = SquareCropViewController/SquareCropViewController.storyboard; sourceTree = "<group>"; };
+		83DE9EEE1A211BEA00285BA9 /* ProgrammaticAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgrammaticAppDelegate.swift; path = SquareCropViewController/ProgrammaticAppDelegate.swift; sourceTree = "<group>"; };
+		83DE9EF01A211D2000285BA9 /* ProgrammaticAppDelegate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ProgrammaticAppDelegate.xib; path = SquareCropViewController/ProgrammaticAppDelegate.xib; sourceTree = "<group>"; };
+		83DE9EF21A211EC300285BA9 /* ADSquareCropViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADSquareCropViewController.xib; sourceTree = "<group>"; };
+		83DE9EF41A2127A100285BA9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		83DE9EF61A212E2900285BA9 /* SquareCropViewController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SquareCropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		83DE9EF71A212E2900285BA9 /* ADSquareCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADSquareCropViewController.h; sourceTree = "<group>"; };
+		83DE9EF81A212E2900285BA9 /* ADSquareCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADSquareCropViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +56,12 @@
 		83CBD8F819FEA18E008ABA78 = {
 			isa = PBXGroup;
 			children = (
-				83CBD90319FEA18E008ABA78 /* SquareCropViewController */,
+				83DE9EF71A212E2900285BA9 /* ADSquareCropViewController.h */,
+				83DE9EF81A212E2900285BA9 /* ADSquareCropViewController.m */,
+				83CBD90319FEA18E008ABA78 /* Storyboard */,
+				83DE9EED1A211B2F00285BA9 /* Programmatic */,
 				83CBD90219FEA18E008ABA78 /* Products */,
+				83DE9EF61A212E2900285BA9 /* SquareCropViewController-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,10 +73,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		83CBD90319FEA18E008ABA78 /* SquareCropViewController */ = {
+		83CBD90319FEA18E008ABA78 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				83CBD93419FEA29E008ABA78 /* Main.storyboard */,
+				83DE9EF41A2127A100285BA9 /* Main.storyboard */,
+				83CBD93419FEA29E008ABA78 /* Demo.storyboard */,
 				83CBD92619FEA1D4008ABA78 /* ADSquareCropViewController.swift */,
 				83CBD92719FEA1D4008ABA78 /* DemoViewController.swift */,
 				83CBD92919FEA1D4008ABA78 /* CGRect+Extensions.swift */,
@@ -72,7 +87,9 @@
 				83CBD90619FEA18E008ABA78 /* AppDelegate.swift */,
 				83CBD90D19FEA18E008ABA78 /* Images.xcassets */,
 				83CBD90419FEA18E008ABA78 /* Supporting Files */,
+				83DE9EF21A211EC300285BA9 /* ADSquareCropViewController.xib */,
 			);
+			name = Storyboard;
 			path = SquareCropViewController;
 			sourceTree = "<group>";
 		};
@@ -82,6 +99,16 @@
 				83CBD90519FEA18E008ABA78 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83DE9EED1A211B2F00285BA9 /* Programmatic */ = {
+			isa = PBXGroup;
+			children = (
+				83DE9EEB1A21198C00285BA9 /* SquareCropViewController.storyboard */,
+				83DE9EEE1A211BEA00285BA9 /* ProgrammaticAppDelegate.swift */,
+				83DE9EF01A211D2000285BA9 /* ProgrammaticAppDelegate.xib */,
+			);
+			name = Programmatic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +168,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CBD93519FEA29F008ABA78 /* Main.storyboard in Resources */,
+				83CBD93519FEA29F008ABA78 /* Demo.storyboard in Resources */,
+				83DE9EF51A2127A100285BA9 /* Main.storyboard in Resources */,
+				83DE9EF31A211EC300285BA9 /* ADSquareCropViewController.xib in Resources */,
 				83CBD90E19FEA18E008ABA78 /* Images.xcassets in Resources */,
 				83CBD93319FEA1D4008ABA78 /* Demo Image.jpeg in Resources */,
 			);
@@ -154,7 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83CBD92D19FEA1D4008ABA78 /* ADSquareCropViewController.swift in Sources */,
+				83DE9EFA1A21337C00285BA9 /* ADSquareCropViewController.swift in Sources */,
 				83CBD93219FEA1D4008ABA78 /* CGSize+Extensions.swift in Sources */,
 				83CBD90719FEA18E008ABA78 /* AppDelegate.swift in Sources */,
 				83CBD93119FEA1D4008ABA78 /* UIImage+Extensions.swift in Sources */,
@@ -250,9 +279,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SquareCropViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SquareCropViewController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -261,9 +293,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SquareCropViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SquareCropViewController-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +320,7 @@
 				83CBD92219FEA18E008ABA78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

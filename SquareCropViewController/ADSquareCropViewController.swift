@@ -49,6 +49,12 @@ class ADSquareCropViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var cropOpeningView: UIView!
     
+    private let NibName = "ADSquareCropViewController"
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(nibName: NibName, bundle: nil);
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -139,8 +145,9 @@ class ADSquareCropViewController: UIViewController, UIScrollViewDelegate {
         scrollView.maximumZoomScale = cropDimension/imageView.bounds.size.minDimension()
         scrollView.minimumZoomScale = scrollView.maximumZoomScale
         
-        scrollView.zoomScale = scrollView.minimumZoomScale
-
+        //        scrollView.zoomScale = scrollView.minimumZoomScale
+        scrollView.setZoomScale(scrollView.minimumZoomScale, animated: false)
+        
         let horizontalInset = (referenceView.bounds.width - cropDimension)/2 - scrollView.frame.origin.x
         let verticalInset = (referenceView.bounds.height - cropDimension)/2 - scrollView.frame.origin.y
         

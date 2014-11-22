@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="i2D-Jd-HdG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="HVo-Yy-JCx">
+            <objects>
+                <viewController id="i2D-Jd-HdG" customClass="DemoViewController" customModule="SquareCropViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zfB-gX-sPX"/>
+                        <viewControllerLayoutGuide type="bottom" id="gb9-id-mxS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PLi-Lk-7HK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Demo Image.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="bXe-tb-0tD">
+                                <rect key="frame" x="20" y="86" width="560" height="494"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvN-M6-pQo">
+                                <rect key="frame" x="321" y="30" width="104" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Crop Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7Tf-Hx-BIG" kind="show" id="Rsd-ma-PCU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-Vy-rqJ">
+                                <rect key="frame" x="179" y="30" width="98" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Pick Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickImageButtonPressed:" destination="i2D-Jd-HdG" eventType="touchUpInside" id="3e2-bX-2Py"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rEK-Vy-rqJ" firstAttribute="top" secondItem="PLi-Lk-7HK" secondAttribute="top" constant="30" id="3ri-L9-5ZY"/>
+                            <constraint firstItem="bXe-tb-0tD" firstAttribute="leading" secondItem="PLi-Lk-7HK" secondAttribute="leading" constant="20" id="90M-nY-IgL"/>
+                            <constraint firstItem="gb9-id-mxS" firstAttribute="top" secondItem="bXe-tb-0tD" secondAttribute="bottom" constant="20" id="FhX-gI-BMI"/>
+                            <constraint firstAttribute="trailing" secondItem="bXe-tb-0tD" secondAttribute="trailing" constant="20" id="Qqq-Jg-ul3"/>
+                            <constraint firstItem="bXe-tb-0tD" firstAttribute="top" secondItem="rEK-Vy-rqJ" secondAttribute="bottom" priority="750" constant="20" id="gE1-H5-fEb"/>
+                            <constraint firstAttribute="centerX" secondItem="rEK-Vy-rqJ" secondAttribute="centerX" constant="72.5" id="jZE-MG-eHm"/>
+                            <constraint firstItem="FvN-M6-pQo" firstAttribute="baseline" secondItem="rEK-Vy-rqJ" secondAttribute="baseline" id="tDo-Iv-gMn"/>
+                            <constraint firstAttribute="centerX" secondItem="FvN-M6-pQo" secondAttribute="centerX" constant="-73" id="zYD-HG-cMN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bXe-tb-0tD" id="Cdx-u3-0Tn"/>
+                        <outlet property="pickImageButton" destination="rEK-Vy-rqJ" id="Hju-cC-BJk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5a6-Ss-ZFx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="533"/>
+        </scene>
+        <!--ADSquareCropViewController-->
+        <scene sceneID="Gqk-GK-Xxx">
+            <objects>
+                <viewController id="7Tf-Hx-BIG" userLabel="ADSquareCropViewController" customClass="ADSquareCropViewController" customModule="SquareCropViewController" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDf-6y-9IQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="533"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Demo Image.jpeg" width="3072" height="2304"/>
+    </resources>
+</document>
